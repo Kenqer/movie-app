@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  overflow: hidden;
 }
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb{
+  background: #facc15;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #ca8a04;
+}
+
+td {
+  @apply pl-10
+}
+th {
+  @apply font-light
+}
+
+button {
+  @apply hover:text-yellow-400 hover:border-yellow-400 duration-300
+}
+
+
+
+  
+  /* Show the controls (hidden at the start by default) */
+  .video-js .vjs-control-bar { 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  /* Make the demo a little prettier */
+
+  
