@@ -61,7 +61,7 @@ const Tvseries = () => {
             </div>
             <div className="grid grid-cols-8 mt-6 gap-6 mx-7">
                         {data.slice(0,24).map((item) => (
-                            <div className="w-[170px] overflow-hidden relative rounded-xl ">
+                            <div className="w-[200px] overflow-hidden relative rounded-xl ">
                                 <Link to="/video">
                                 <img className=" cursor-pointer hover:scale-105 ease-in-out duration-300 shadow-xl hover:border-yellow-500" src={item.img} alt="poster" />
                                 </Link>
